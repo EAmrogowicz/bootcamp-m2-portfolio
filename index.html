@@ -1,45 +1,166 @@
 <!DOCTYPE html>
 <html lang="en-gb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
+    <!-- Always include this line of code!!! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<body>
-  <!-- main logo / nav -->
-  <header>
-    <h1>Lernantino</h1>
-    <nav>
-    </nav>
-  </header>
+    <title>Ewelina Amrogowicz - Web Developer</title>
 
-  <!-- hero banner -->
-  <section class="hero-banner">
-    <div>
-      <h2>Cool subtitle here!</h2>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+
+  <body>
+    <!-- main logo / nav -->
+    <header class="header">
+      <h2 class="heading-title">Portfolio</h2>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="#" class="main-nav-link">About Me</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">My Work</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">Contact Me</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- hero banner -->
+    <section class="hero-banner">
+      <div class="hero-text-box">
+        <h1 class="heading-primary">Ewelina Amrogowicz</h1>
+        <p class="subheading-title">Frontend Web Developer</p>
+      </div>
+    </section>
+
+    <main class="page-wrapper">
+      <!-- about me -->
+      <section class="container grid" id="about">
+        <div class="step-title">
+          <h2 class="heading-secondary">About Me</h2>
+        </div>
+        <div class="about-img-box">
+          <img
+            src="./assets/images/ewelinastudio-painting.jpg"
+            alt="Ewelina paints in her studio"
+            class="img-box"
+          />
+          <div class="about-text-box">
+            <p class="p-text">
+              Predominantly a landscape painter, Ewelina Amrogowicz is a Polish
+              artist currently living in London. Ewelina's focus on the natural
+              world is stimulated by her passion for the environment and an
+              interest in escapism. Her recent works are mainly oil on stretched
+              canvas, though she often goes back to acrylic. She dedicates
+              herself to different topics and motives, but remain true to the
+              photorealistic painting style.
+            </p>
+            <p class="p-text">
+              Currently expand her creative side in Web Development.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- portfolio container -->
+      <section class="container grid" id="work">
+        <div class="step-title">
+          <h2 class="heading-secondary">My Work</h2>
+        </div>
+        <div class="work-grid">
+          <div class="work-grid-box1 work-box">
+            <a href="www.google.com" class="work-grid-link" target="_blank">
+              <div class="work-grid-label label-primary">
+                <h3 class="heading-tertiary">Advent of Code</h3>
+                <p class="subheading">JavaScript.</p>
+              </div>
+              <img src="./assets/images/adventOfCode.avif" alt="" />
+            </a>
+          </div>
+          <div class="work-grid-box2 work-grid-img">
+            <div class="work-grid-label label-secondary">
+              <h3 class="heading-tertiary">GitHub</h3>
+              <p class="subheading">Library of projects.</p>
+            </div>
+          </div>
+          <div class="work-grid-box3 work-grid-img">
+            <div class="work-grid-label label-secondary">
+              <h3 class="heading-tertiary">Linktree</h3>
+              <p class="subheading">Html, CSS and JavaScript.</p>
+            </div>
+          </div>
+          <div class="work-grid-box4 work-grid-img">
+            <div class="work-grid-label label-secondary">
+              <h3 class="heading-tertiary">TBC</h3>
+              <p class="subheading">tbc</p>
+            </div>
+          </div>
+          <div class="work-grid-box5 work-grid-img">
+            <div class="work-grid-label label-secondary">
+              <h3 class="heading-tertiary">TBC</h3>
+              <p class="subheading">tbc</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section class="feature-box" id="contact">
+        <div class="contact-box">
+          <a
+            href="https://github.com/EAmrogowicz"
+            class="contact-link"
+            target="_blank"
+          >
+            <ion-icon name="logo-github" class="contact-icon"></ion-icon>
+          </a>
+          <a
+            href="https://uk.linkedin.com/in/ewelina-amrogowicz-5758b1aa"
+            class="contact-link"
+            target="_blank"
+          >
+            <ion-icon name="logo-linkedin" class="contact-icon"></ion-icon>
+          </a>
+          <a href="#" class="contact-link" target="_blank">
+            <ion-icon name="mail-outline" class="contact-icon"></ion-icon>
+          </a>
+          <a
+            href="https://www.instagram.com/ewelinastudio/"
+            class="contact-link"
+            target="_blank"
+          >
+            <ion-icon name="logo-instagram" class="contact-icon"></ion-icon>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <div class="footer">
+      <p class="copyright">
+        Copyright &copy;<span class="year">2022</span> by Ewelina.Studio. All
+        right reserved.
+      </p>
     </div>
-  </section>
-
-  <main class="page-wrapper">
-    <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
-    </section>
-
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
-    </section>
-
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-    </section>
-  </main>
-</body>
-
+  </body>
 </html>
