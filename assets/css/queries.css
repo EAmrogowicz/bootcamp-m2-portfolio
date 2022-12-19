@@ -92,6 +92,10 @@ Instead, 1rem = 1em = 16px */
     padding: 1.2rem 3.2rem;
   }
 
+  .main-nav-list {
+    gap: 2.4rem;
+  }
+
   /* --- about me --- */
 
   .about-img-box {
@@ -113,5 +117,11 @@ Instead, 1rem = 1em = 16px */
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);
     grid-template-areas: "a" "b" "c" "d" "e";
+  }
+
+  /* --- contact --- */
+
+  .contact-box {
+    gap: 4.8rem;
   }
 }
