@@ -77,6 +77,12 @@ Instead, 1rem = 1em = 16px */
     margin: 0 auto;
   }
 
+  /* --- hero --- */
+
+  .hero-banner {
+    height: 90vh;
+  }
+
   /* --- nav --- */
 
   .header {
