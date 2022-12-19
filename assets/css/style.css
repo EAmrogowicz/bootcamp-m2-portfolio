@@ -58,12 +58,13 @@ body {
 }
 
 .heading-tertiary {
-  font-size: 2.4rem;
-  padding-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 0.6rem;
   color: var(--whiteish);
 }
 
-.subheading-title {
+.subheading-hero {
   font-size: 2.4rem;
   font-weight: 500;
   color: var(--accent);
@@ -76,11 +77,11 @@ body {
   font-size: 1.2rem;
   font-weight: 400;
   color: var(--tint);
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 .p-text {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.2;
 }
@@ -118,6 +119,20 @@ body {
   background-color: var(--shade);
   height: 6.4rem;
   padding: 0 3.2rem;
+}
+
+.link-home {
+  text-decoration: none;
+}
+
+.link-home h2:link,
+.link-home h2:visited {
+  transition: all 0.3s;
+}
+
+.link-home h2:hover,
+.link-home h2:active {
+  color: var(--accent);
 }
 
 /**************************/
@@ -178,12 +193,11 @@ body {
   gap: 1.2rem;
   align-items: center;
 }
-.about-img-box {
-  display: flex;
-}
 
 .img-box {
-  width: 200px;
+  max-width: 100%;
+  overflow: hidden;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 /**************************/
@@ -202,15 +216,6 @@ body {
   row-gap: 1.2rem;
 }
 
-.work-box {
-  overflow: hidden;
-}
-
-.work-box:hover {
-  background-color: rgba(204, 197, 185, 0.8);
-  transition: all 0.4s ease-in-out;
-}
-
 .work-grid-box1 {
   grid-area: a;
 }
@@ -225,50 +230,53 @@ body {
 
 .work-grid-box4 {
   grid-area: d;
-  background-image: url(../images/tbc.avif);
 }
 
 .work-grid-box5 {
   grid-area: e;
-  background-image: url(../images/tbc.avif);
 }
 
-.work-grid-img {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-}
-
-.work-grid-link {
+.work-link,
+.work-link-mini {
   text-decoration: none;
 }
 
-.work-grid-link img {
+.work-box {
+  overflow: hidden;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.work-link img {
   width: 100%;
   position: relative;
   top: -20%;
+  opacity: 75%;
 }
 
-.work-grid-link img:hover {
+.work-link-mini img {
+  width: 100%;
+  position: relative;
+  top: -60%;
   opacity: 60%;
+}
+
+.work-box:hover {
+  background-image: linear-gradient(
+    to right bottom,
+    var(--shade),
+    var(--accent)
+  );
+
   transition: all 0.4s ease-in-out;
 }
 
-.work-grid-label {
+.work-label {
   background-color: rgba(37, 36, 34, 0.8);
   padding: 1rem;
-  width: 40%;
+  width: 100%;
   position: relative;
   z-index: 100;
-}
-
-.label-primary {
-  top: 75%;
-}
-
-.label-secondary {
-  top: 45%;
+  margin-bottom: 1.2rem;
 }
 
 /**************************/
@@ -279,6 +287,7 @@ body {
   padding: 3.2rem 4.8rem;
   /* height: 20vh; */
   color: var(--whiteish);
+  margin-top: 3.2rem;
 }
 
 .contact-box {
@@ -317,7 +326,7 @@ body {
 .copyright {
   border-top: 1px solid var(--tint);
   padding: 2.4rem 0;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   line-height: 1.5;
   color: var(--whiteish);
   text-align: center;
